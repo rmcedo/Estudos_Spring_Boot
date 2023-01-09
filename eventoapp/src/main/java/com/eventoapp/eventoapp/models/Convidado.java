@@ -3,12 +3,16 @@ package com.eventoapp.eventoapp.models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class Convidado {
 
 	@Id
+	@NotBlank
 	private String rg;
+	
+	@NotBlank
 	private String nomeConvidado;
 	
 	
